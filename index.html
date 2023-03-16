@@ -47,10 +47,14 @@
 
                 </ul>
 
-                <button class="menu-button" type="button">
+                <button class="menu-button" type="button" is-open>
+
                     <svg class="menu-icon">
+
                         <use href="./images/icons.svg#icon-hamburger"></use>
+
                     </svg>
+
                 </button>
 
             </nav>
@@ -218,17 +222,20 @@
                 <ul class="list works">
 
                     <li>
-                        <img src="./images/monitor.jpg" alt="monitor " width="360" height="300" />
+                        <img srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x" src="./images/monitor.jpg"
+                            alt="monitor " width="360" />
                     </li>
 
 
                     <li>
-                        <img src="./images/phone.jpg" alt="phone" width="360" height="300" />
+                        <img srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x" src="./images/phone.jpg"
+                            alt="phone" width="360" />
                     </li>
 
 
                     <li>
-                        <img src="./images/phone_monitor.jpg" alt="phone_monitor" width="360" height="300" />
+                        <img srcset="./images/phone_monitor.jpg 1x, ./images/phone-monitor@ 2x.jpg"
+                            src="./images/phone_monitor.jpg" alt="phone_monitor" width="360" />
                     </li>
 
                 </ul>
@@ -251,7 +258,8 @@
                 <ul class=" list our-team">
 
                     <li class="our-team-box">
-                        <img src="./images/mark.jpg" alt="Mark" width="264" height="260" />
+                        <img srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="Mark"
+                            width="264" />
 
                         <div class="about-team ">
 
@@ -342,7 +350,8 @@
                     </li>
 
                     <li class="our-team-box">
-                        <img src="./images/tom.jpg" alt="Tom" width="264" height="260" />
+                        <img srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x" src="./images/tom.jpg" alt="Tom"
+                            width="264" />
 
                         <div class="about-team">
 
@@ -433,7 +442,8 @@
 
                     <li class="our-team-box">
 
-                        <img src="./images/camila.jpg" alt="Camila" width="264" height="260" />
+                        <img srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x" src="./images/camila.jpg"
+                            alt="Camila" />
 
                         <div class="about-team">
 
@@ -521,7 +531,8 @@
                     </li>
 
                     <li class="our-team-box">
-                        <img src="./images/daniel.jpg" alt="Daniel" width="264" height="260" />
+                        <img srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x" src="./images/daniel.jpg"
+                            alt="Daniel" width="264" />
 
                         <div class="about-team">
 
@@ -977,14 +988,157 @@
 
 
     </div>
-
     </form>
+
+    <!-- Mobile menu -->
+
+    <div class="mobile-backdrop backdrop hidden" backdrop is-open>
+
+        <button type="button" class="modal-close is-close " is-close>
+
+            <svg class="icon-close">
+
+                <use href="./images/icons.svg#icon-vector">
+                </use>
+
+            </svg>
+
+        </button>
+
+        <div class="mobile-nav">
+
+            <ul class="mobile-ul">
+
+
+                <li class="mobile-nav-list">
+
+                    <a class="mobile-adress" href="./index.html">Studio</a>
+
+                </li>
+
+                <li class="mobile-nav-list">
+
+                    <a class="mobile-adress" href="./portfolio.html">Portfolio</a>
+
+                </li>
+
+                <li class="mobile-nav-list">
+
+                    <a class="mobile-adress" href="#">Contacts</a>
+
+                </li>
+
+            </ul>
+
+
+            <div class="mobile-contact">
+
+                <ul class="mobile-contact-ul">
+
+                    <li class="mobile-list">
+
+                        <a class="mobile-contact-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+
+                    </li>
+
+
+                    <li class="mobile-list">
+
+                        <a class="mobile-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+                    </li>
+
+                </ul>
+
+                <div class="mobile-icon-countainer">
+
+                    <ul class="mobile-icon-list">
+
+                        <li class="icon-li">
+
+                            <a class="icons-link" href="#">
+
+                                <svg class="icons-team">
+
+
+
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+
+                                </svg>
+
+                            </a>
+
+                        </li>
+
+                        <li class="icon-li">
+
+                            <a class="icons-link" href="#">
+
+                                <svg class="icons-team">
+
+
+
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+
+
+                                </svg>
+
+                            </a>
+
+                        </li>
+
+                        <li class="icon-li">
+
+                            <a class="icons-link" href="#">
+
+
+                                <svg class="icons-team">
+
+
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+
+
+
+                                </svg>
+
+                            </a>
+
+                        </li>
+
+                        <li class="icon-li">
+
+                            <a class="icons-link" href="#">
+
+                                <svg class="icons-team">
+
+
+
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+
+
+
+                                </svg>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
 
 
 
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
 
 </body>
 
