@@ -249,10 +249,10 @@ a {
   }
 }
 
-@media screen and (min-width: 430px) (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 430px) and (min-device-pixel-ratio: 2),
+  (min-width: 430px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 430px) and (min-resolution: 192dpi),
+  (min-width: 430px) and (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(
         to right,
