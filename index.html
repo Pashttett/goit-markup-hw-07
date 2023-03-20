@@ -47,7 +47,7 @@
 
                 </ul>
 
-                <button class="menu-button" type="button" is-open>
+                <button class="menu-button" type="button" data-mobile-open>
 
                     <svg class="menu-icon">
 
@@ -246,12 +246,11 @@
 
         <section class="team">
 
-            <div class="container our-team-countainer">
-
+            <div class="container">
 
                 <h2 class="title-team">Our Team</h2>
 
-                <ul class=" list our-team">
+                <ul class="our-team">
 
                     <li class="our-team-box">
                         <img srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="Mark"
@@ -443,7 +442,7 @@
                     <li class="our-team-box">
 
                         <img srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x" src="./images/camila.jpg"
-                            alt="Camila" />
+                            alt="Camila" width="264" />
 
                         <div class="about-team">
 
@@ -528,6 +527,7 @@
 
 
                     <li class="our-team-box">
+
                         <img srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x" src="./images/daniel.jpg"
                             alt="Daniel" width="264" />
 
@@ -604,14 +604,15 @@
 
 
                                         </svg>
+
                                     </a>
+
                                 </li>
 
                             </ul>
-
                         </div>
-
-
+                    </li>
+                </ul>
             </div>
 
         </section>
@@ -827,7 +828,7 @@
 
             <div class="form-footer">
 
-                <form name="form-subscribe" autocomplete="on" novalidate>
+                <form name="form-subscribe" autocomplete="on">
 
                     <p class="social-footer">Subscribe</p>
 
@@ -847,19 +848,19 @@
                             </svg>
 
                         </button>
+
                     </div>
+
+                </form>
 
             </div>
 
-            </form>
-
         </div>
 
-        </div>
 
     </footer>
 
-    <div class="backdrop is-hidden" data-modal is-hidden>
+    <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
 
@@ -937,11 +938,8 @@
 
                 <label class="modal-label" for="modal-comment">Comment</label>
 
-                <textarea class="modal-comment-area" type="modal-comment" placeholder="Text input" id="modal-comment"
+                <textarea class="modal-comment-area" placeholder="Text input" id="modal-comment"
                     name="modal-comment"></textarea>
-
-
-
 
                 <div class="modal-link-checkbox">
                     <div class="checkbox-icon-container">
@@ -981,20 +979,18 @@
                     <button class="modal-button-send" type="submit">Send</button>
 
                 </div>
-
+            </form>
         </div>
-
-
 
     </div>
 
-    </form>
+
 
     <!-- Mobile menu -->
 
-    <div class="mobile-backdrop backdrop hidden" backdrop is-open>
+    <div class="mobile-backdrop backdrop hidden" data-modal-block data-mobile-open>
 
-        <button type="button" class="modal-close is-close " is-close>
+        <button type="button" class="modal-close is-close " data-mobile-close>
 
             <svg class="icon-close">
 
